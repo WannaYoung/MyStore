@@ -1,25 +1,344 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mhw-dm-k4k">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--首页-->
+        <scene sceneID="raq-lZ-YqV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="kTx-ae-8Tk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home_off" id="LC3-N7-PSm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKH-nn-3l7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tLT-Sg-7iR" kind="relationship" relationship="rootViewController" id="Xof-OP-cce"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gug-Jn-HoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="-1154"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="h7Q-N8-3oU">
+            <objects>
+                <navigationController id="aiE-US-ivP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="分类" image="category_off" id="9O3-4m-MQE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kcp-ru-bwk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXb-5a-abo" kind="relationship" relationship="rootViewController" id="Ocx-59-Vaa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPp-T8-88p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="-418"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="mw3-ay-JsU">
+            <objects>
+                <viewController id="tLT-Sg-7iR" customClass="HomeViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="cfH-0X-fqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="XIc-on-FS0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="RS8-gT-yS6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity_01" translatesAutoresizingMaskIntoConstraints="NO" id="R1S-9g-zX7">
+                                <rect key="frame" x="0.0" y="64" width="600" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="R1S-9g-zX7" secondAttribute="height" multiplier="3:1" constant="-177" id="S9b-Pe-AGv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R1S-9g-zX7" secondAttribute="trailing" id="4qa-5q-jHc"/>
+                            <constraint firstItem="R1S-9g-zX7" firstAttribute="leading" secondItem="RS8-gT-yS6" secondAttribute="leading" id="6cy-iZ-afe"/>
+                            <constraint firstItem="R1S-9g-zX7" firstAttribute="top" secondItem="cfH-0X-fqd" secondAttribute="bottom" id="QLt-8x-qK5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="home_off" selectedImage="home_on" id="ql3-pf-rxt"/>
+                    <navigationItem key="navigationItem" title="首页" id="fMY-tK-rmm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="272-xq-qWx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-1154"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="JSs-Ua-eD4">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXb-5a-abo" customClass="CategoryViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="42E-B0-MZH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZPN-4c-gQc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X7R-vt-nKv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxZ-0S-xBH">
+                                <rect key="frame" x="0.0" y="64" width="90" height="487"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-uV-6Sm">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="487"/>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="35" id="gMI-h0-fTX">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gMI-h0-fTX" id="9sd-WU-kbu">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个护" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaj-i6-38G">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="35"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="qaj-i6-38G" secondAttribute="trailing" id="61z-ex-xDO"/>
+                                                        <constraint firstItem="qaj-i6-38G" firstAttribute="top" secondItem="9sd-WU-kbu" secondAttribute="top" id="MnT-G2-AyC"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qaj-i6-38G" secondAttribute="bottom" id="ojl-VS-csf"/>
+                                                        <constraint firstItem="qaj-i6-38G" firstAttribute="leading" secondItem="9sd-WU-kbu" secondAttribute="leading" id="sLX-YU-3jd"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vXb-5a-abo" id="ttA-lR-Oub"/>
+                                            <outlet property="delegate" destination="vXb-5a-abo" id="lHk-Ty-Qxv"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uxZ-0S-xBH" secondAttribute="height" multiplier="91:487" constant="-1" id="4sL-Aa-TiC"/>
+                                    <constraint firstItem="bvm-uV-6Sm" firstAttribute="top" secondItem="uxZ-0S-xBH" secondAttribute="top" id="ITU-oU-8eh"/>
+                                    <constraint firstItem="bvm-uV-6Sm" firstAttribute="leading" secondItem="uxZ-0S-xBH" secondAttribute="leading" id="KeZ-Qj-YHb"/>
+                                    <constraint firstAttribute="bottom" secondItem="bvm-uV-6Sm" secondAttribute="bottom" id="OnH-bn-RwD"/>
+                                    <constraint firstAttribute="trailing" secondItem="bvm-uV-6Sm" secondAttribute="trailing" id="s8Z-3E-XGm"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0eI-8P-ZJk">
+                                <rect key="frame" x="90" y="64" width="510" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rIh-r2-dIk" customClass="CategoryFlowLayout" customModule="MyStore" customModuleProvider="target">
+                                    <size key="itemSize" width="60" height="85"/>
+                                    <size key="headerReferenceSize" width="30" height="30"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemCell" id="wXE-Sh-ddz">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity_01" translatesAutoresizingMaskIntoConstraints="NO" id="d2L-9a-UEb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="d2L-9a-UEb" secondAttribute="height" multiplier="1:1" id="gvQ-9O-8ai"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机通讯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-9T-DVX">
+                                                    <rect key="frame" x="0.0" y="65" width="60" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lhG-9T-DVX" secondAttribute="bottom" id="AnD-cB-PDr"/>
+                                            <constraint firstItem="lhG-9T-DVX" firstAttribute="top" secondItem="d2L-9a-UEb" secondAttribute="bottom" constant="5" id="F6t-E5-ppr"/>
+                                            <constraint firstAttribute="trailing" secondItem="d2L-9a-UEb" secondAttribute="trailing" id="KeJ-jA-jNP"/>
+                                            <constraint firstAttribute="trailing" secondItem="lhG-9T-DVX" secondAttribute="trailing" id="Wtc-cU-HHh"/>
+                                            <constraint firstItem="d2L-9a-UEb" firstAttribute="leading" secondItem="wXE-Sh-ddz" secondAttribute="leading" id="e27-V2-aFQ"/>
+                                            <constraint firstItem="d2L-9a-UEb" firstAttribute="top" secondItem="wXE-Sh-ddz" secondAttribute="top" id="git-QQ-hNM"/>
+                                            <constraint firstItem="lhG-9T-DVX" firstAttribute="leading" secondItem="wXE-Sh-ddz" secondAttribute="leading" id="kmW-m4-i4j"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerView" id="8dF-QH-veQ" customClass="CollectionHeaderView" customModule="MyStore" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="510" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-tm-2jg">
+                                            <rect key="frame" x="8" y="0.0" width="100" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="headerTitle" destination="V3w-tm-2jg" id="wxy-Ev-eHG"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXb-5a-abo" id="r9g-n5-eUW"/>
+                                    <outlet property="delegate" destination="vXb-5a-abo" id="egE-Z9-yw6"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPN-4c-gQc" firstAttribute="top" secondItem="0eI-8P-ZJk" secondAttribute="bottom" id="1jm-2B-hOG"/>
+                            <constraint firstItem="0eI-8P-ZJk" firstAttribute="leading" secondItem="uxZ-0S-xBH" secondAttribute="trailing" id="3ev-N9-H7C"/>
+                            <constraint firstItem="ZPN-4c-gQc" firstAttribute="top" secondItem="uxZ-0S-xBH" secondAttribute="bottom" id="99f-QN-Uw9"/>
+                            <constraint firstAttribute="trailing" secondItem="0eI-8P-ZJk" secondAttribute="trailing" id="T3l-Si-c7m"/>
+                            <constraint firstItem="0eI-8P-ZJk" firstAttribute="top" secondItem="42E-B0-MZH" secondAttribute="bottom" id="hHc-XH-XMq"/>
+                            <constraint firstItem="uxZ-0S-xBH" firstAttribute="leading" secondItem="X7R-vt-nKv" secondAttribute="leading" id="phz-O3-tTi"/>
+                            <constraint firstItem="uxZ-0S-xBH" firstAttribute="top" secondItem="42E-B0-MZH" secondAttribute="bottom" id="wYS-17-dvA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="zJg-Qr-yad"/>
+                    <navigationItem key="navigationItem" title="分类" id="RwJ-Vc-3zC"/>
+                    <connections>
+                        <outlet property="categoryCollection" destination="0eI-8P-ZJk" id="stp-z4-Sd6"/>
+                        <outlet property="categoryTable" destination="bvm-uV-6Sm" id="39E-0s-SKi"/>
+                        <segue destination="nYa-Ux-Yh4" kind="show" identifier="classID" id="lll-tt-quT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjL-BS-J1o" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-418"/>
+        </scene>
+        <!--Class View Controller-->
+        <scene sceneID="6FJ-C5-dwx">
+            <objects>
+                <viewController storyboardIdentifier="classID" hidesBottomBarWhenPushed="YES" id="nYa-Ux-Yh4" customClass="ClassViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m8m-cI-fh8"/>
+                        <viewControllerLayoutGuide type="bottom" id="6wN-6J-9yb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ecA-t9-Fnd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTx-FU-VOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2376" y="-418"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="VpE-tU-y3H">
+            <objects>
+                <tabBarController id="Mhw-dm-k4k" customClass="TabBarViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OpD-Fm-hkl">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kTx-ae-8Tk" kind="relationship" relationship="viewControllers" id="rWf-XI-5nA"/>
+                        <segue destination="aiE-US-ivP" kind="relationship" relationship="viewControllers" id="D9x-UQ-VMn"/>
+                        <segue destination="29s-Ig-WFp" kind="relationship" relationship="viewControllers" id="Nem-hJ-i0J"/>
+                        <segue destination="r8O-cn-sXF" kind="relationship" relationship="viewControllers" id="g0y-pG-oZ9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMT-1C-krp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126" y="710"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="lK3-qs-upJ">
+            <objects>
+                <navigationController id="29s-Ig-WFp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" image="cart_off" id="myO-Bg-Mvf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yNg-A3-B0C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Z3L-YN-L7y" kind="relationship" relationship="rootViewController" id="sr1-S9-aul"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVT-tv-doE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="418"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="zIx-V9-ttg">
+            <objects>
+                <viewController id="Z3L-YN-L7y" customClass="CartViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KE0-Wr-ioe"/>
+                        <viewControllerLayoutGuide type="bottom" id="mY5-ua-tEv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P9d-Z2-8ew">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="XxH-tA-Frr"/>
+                    <navigationItem key="navigationItem" title="购物车" id="ApT-B6-Iog"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNu-B4-5wP" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1646" y="418"/>
+        </scene>
+        <!--更多-->
+        <scene sceneID="jIs-MI-feV">
+            <objects>
+                <navigationController id="r8O-cn-sXF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="更多" image="setting_off" id="QpY-uu-oQF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Wr-z3-5DF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fMn-At-Mzw" kind="relationship" relationship="rootViewController" id="quy-DU-qhL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ho-m6-hV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="1230"/>
+        </scene>
+        <!--更多-->
+        <scene sceneID="3na-Te-ccg">
+            <objects>
+                <viewController id="fMn-At-Mzw" customClass="SettingViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cEm-wr-DMj"/>
+                        <viewControllerLayoutGuide type="bottom" id="sxn-iE-Uts"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="89E-4c-Hd3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="D4n-EG-jbf"/>
+                    <navigationItem key="navigationItem" title="更多" id="PEG-uE-H9T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fp-Sb-XMx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="1230"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activity_01" width="30" height="30"/>
+        <image name="cart_off" width="30" height="30"/>
+        <image name="category_off" width="30" height="30"/>
+        <image name="home_off" width="30" height="30"/>
+        <image name="home_on" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="setting_off" width="30" height="30"/>
+    </resources>
 </document>

@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2FD9F17C1B799A5F00104971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F17B1B799A5F00104971 /* AppDelegate.swift */; };
-		2FD9F17E1B799A5F00104971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F17D1B799A5F00104971 /* ViewController.swift */; };
 		2FD9F1811B799A5F00104971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD9F17F1B799A5F00104971 /* Main.storyboard */; };
 		2FD9F1831B799A5F00104971 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD9F1821B799A5F00104971 /* Images.xcassets */; };
 		2FD9F1861B799A5F00104971 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD9F1841B799A5F00104971 /* LaunchScreen.xib */; };
 		2FD9F1921B799A5F00104971 /* MyStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1911B799A5F00104971 /* MyStoreTests.swift */; };
+		2FD9F19C1B79A00A00104971 /* category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FD9F19B1B79A00A00104971 /* category.plist */; };
+		2FD9F1BA1B79A02B00104971 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F19F1B79A02B00104971 /* CartViewController.swift */; };
+		2FD9F1BB1B79A02B00104971 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1A41B79A02B00104971 /* CategoryViewController.swift */; };
+		2FD9F1BC1B79A02B00104971 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1A51B79A02B00104971 /* ClassViewController.swift */; };
+		2FD9F1BD1B79A02B00104971 /* CategoryFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1A81B79A02B00104971 /* CategoryFlowLayout.swift */; };
+		2FD9F1BE1B79A02B00104971 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1A91B79A02B00104971 /* CollectionHeaderView.swift */; };
+		2FD9F1BF1B79A02B00104971 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1AC1B79A02B00104971 /* HomeViewController.swift */; };
+		2FD9F1C01B79A02B00104971 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1B11B79A02B00104971 /* SettingViewController.swift */; };
+		2FD9F1C11B79A02B00104971 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9F1B61B79A02B00104971 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +37,21 @@
 		2FD9F1761B799A5F00104971 /* MyStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD9F17A1B799A5F00104971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD9F17B1B799A5F00104971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FD9F17D1B799A5F00104971 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FD9F1801B799A5F00104971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FD9F1821B799A5F00104971 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FD9F1851B799A5F00104971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2FD9F18B1B799A5F00104971 /* MyStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD9F1901B799A5F00104971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FD9F1911B799A5F00104971 /* MyStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStoreTests.swift; sourceTree = "<group>"; };
+		2FD9F19B1B79A00A00104971 /* category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = category.plist; sourceTree = "<group>"; };
+		2FD9F19F1B79A02B00104971 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		2FD9F1A41B79A02B00104971 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		2FD9F1A51B79A02B00104971 /* ClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		2FD9F1A81B79A02B00104971 /* CategoryFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryFlowLayout.swift; sourceTree = "<group>"; };
+		2FD9F1A91B79A02B00104971 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		2FD9F1AC1B79A02B00104971 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2FD9F1B11B79A02B00104971 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2FD9F1B61B79A02B00104971 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +94,15 @@
 			isa = PBXGroup;
 			children = (
 				2FD9F17B1B799A5F00104971 /* AppDelegate.swift */,
-				2FD9F17D1B799A5F00104971 /* ViewController.swift */,
 				2FD9F17F1B799A5F00104971 /* Main.storyboard */,
-				2FD9F1821B799A5F00104971 /* Images.xcassets */,
 				2FD9F1841B799A5F00104971 /* LaunchScreen.xib */,
+				2FD9F1B41B79A02B00104971 /* TabBar */,
+				2FD9F1AA1B79A02B00104971 /* Home */,
+				2FD9F1A21B79A02B00104971 /* Category */,
+				2FD9F19D1B79A02B00104971 /* Cart */,
+				2FD9F1AF1B79A02B00104971 /* Settings */,
+				2FD9F1B91B79A02B00104971 /* ThirdParty */,
+				2FD9F1821B799A5F00104971 /* Images.xcassets */,
 				2FD9F1791B799A5F00104971 /* Supporting Files */,
 			);
 			path = MyStore;
@@ -91,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2FD9F17A1B799A5F00104971 /* Info.plist */,
+				2FD9F19B1B79A00A00104971 /* category.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +132,176 @@
 				2FD9F1901B799A5F00104971 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FD9F19D1B79A02B00104971 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F19E1B79A02B00104971 /* Controller */,
+				2FD9F1A01B79A02B00104971 /* Modal */,
+				2FD9F1A11B79A02B00104971 /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		2FD9F19E1B79A02B00104971 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F19F1B79A02B00104971 /* CartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD9F1A01B79A02B00104971 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2FD9F1A11B79A02B00104971 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD9F1A21B79A02B00104971 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1A31B79A02B00104971 /* Controller */,
+				2FD9F1A61B79A02B00104971 /* Modal */,
+				2FD9F1A71B79A02B00104971 /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2FD9F1A31B79A02B00104971 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1A41B79A02B00104971 /* CategoryViewController.swift */,
+				2FD9F1A51B79A02B00104971 /* ClassViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD9F1A61B79A02B00104971 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2FD9F1A71B79A02B00104971 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1A81B79A02B00104971 /* CategoryFlowLayout.swift */,
+				2FD9F1A91B79A02B00104971 /* CollectionHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD9F1AA1B79A02B00104971 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1AB1B79A02B00104971 /* Controller */,
+				2FD9F1AD1B79A02B00104971 /* Modal */,
+				2FD9F1AE1B79A02B00104971 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2FD9F1AB1B79A02B00104971 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1AC1B79A02B00104971 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD9F1AD1B79A02B00104971 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2FD9F1AE1B79A02B00104971 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD9F1AF1B79A02B00104971 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1B01B79A02B00104971 /* Controller */,
+				2FD9F1B21B79A02B00104971 /* Modal */,
+				2FD9F1B31B79A02B00104971 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2FD9F1B01B79A02B00104971 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1B11B79A02B00104971 /* SettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD9F1B21B79A02B00104971 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2FD9F1B31B79A02B00104971 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD9F1B41B79A02B00104971 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1B51B79A02B00104971 /* Controller */,
+				2FD9F1B71B79A02B00104971 /* Modal */,
+				2FD9F1B81B79A02B00104971 /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2FD9F1B51B79A02B00104971 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FD9F1B61B79A02B00104971 /* TabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD9F1B71B79A02B00104971 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2FD9F1B81B79A02B00104971 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FD9F1B91B79A02B00104971 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +386,7 @@
 			files = (
 				2FD9F1811B799A5F00104971 /* Main.storyboard in Resources */,
 				2FD9F1861B799A5F00104971 /* LaunchScreen.xib in Resources */,
+				2FD9F19C1B79A00A00104971 /* category.plist in Resources */,
 				2FD9F1831B799A5F00104971 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +405,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD9F17E1B799A5F00104971 /* ViewController.swift in Sources */,
+				2FD9F1BB1B79A02B00104971 /* CategoryViewController.swift in Sources */,
+				2FD9F1BC1B79A02B00104971 /* ClassViewController.swift in Sources */,
+				2FD9F1BF1B79A02B00104971 /* HomeViewController.swift in Sources */,
+				2FD9F1BD1B79A02B00104971 /* CategoryFlowLayout.swift in Sources */,
+				2FD9F1C01B79A02B00104971 /* SettingViewController.swift in Sources */,
+				2FD9F1BE1B79A02B00104971 /* CollectionHeaderView.swift in Sources */,
+				2FD9F1BA1B79A02B00104971 /* CartViewController.swift in Sources */,
+				2FD9F1C11B79A02B00104971 /* TabBarViewController.swift in Sources */,
 				2FD9F17C1B799A5F00104971 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,7 +542,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -352,7 +554,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
