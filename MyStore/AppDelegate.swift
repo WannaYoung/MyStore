@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self .configAppreance()
         
+        self.window?.backgroundColor = UIColor .whiteColor()
+        
         return true
     }
     

@@ -182,6 +182,8 @@ class CategoryViewController: UIViewController,UITableViewDataSource, UITableVie
         self.navigationController! .pushViewController(classVC, animated: true)
         
     }
+    
+    
 
     /*
     // MARK: - Navigation

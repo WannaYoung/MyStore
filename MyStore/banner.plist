@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>展示一</string>
+		<key>image</key>
+		<string>http://img.sccnn.com/bimg/337/23209.jpg</string>
+		<key>skip</key>
+		<string>http://www.baidu.com</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>展示二</string>
+		<key>image</key>
+		<string>http://f6.topit.me/6/1e/ea/1146470625aebea1e6o.jpg</string>
+		<key>skip</key>
+		<string>http://www.baidu.com</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>展示三</string>
+		<key>image</key>
+		<string>http://cdn.duitang.com/uploads/item/201403/18/20140318131318_HLm88.png</string>
+		<key>skip</key>
+		<string>http://www.baidu.com</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>展示四</string>
+		<key>image</key>
+		<string>http://pic23.nipic.com/20120919/10487111_165545728000_2.jpg</string>
+		<key>skip</key>
+		<string>http://www.baidu.com</string>
+	</dict>
+</array>
+</plist>

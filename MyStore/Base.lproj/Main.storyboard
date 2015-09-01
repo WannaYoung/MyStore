@@ -40,10 +40,29 @@
             </objects>
             <point key="canvasLocation" x="810" y="-418"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="LBL-yY-KhT">
+            <objects>
+                <viewController storyboardIdentifier="webID" hidesBottomBarWhenPushed="YES" id="10n-j0-e7c" customClass="WebViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OnC-V4-pAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="dNJ-MM-3w1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sbm-wF-Tza">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRa-b4-fHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618" y="-1846"/>
+        </scene>
         <!--首页-->
         <scene sceneID="mw3-ay-JsU">
             <objects>
-                <viewController id="tLT-Sg-7iR" customClass="HomeViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="tLT-Sg-7iR" customClass="HomeViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cfH-0X-fqd"/>
                         <viewControllerLayoutGuide type="bottom" id="XIc-on-FS0"/>
@@ -51,20 +70,7 @@
                     <view key="view" contentMode="scaleToFill" id="RS8-gT-yS6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activity_01" translatesAutoresizingMaskIntoConstraints="NO" id="R1S-9g-zX7">
-                                <rect key="frame" x="0.0" y="64" width="600" height="259"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="R1S-9g-zX7" secondAttribute="height" multiplier="3:1" constant="-177" id="S9b-Pe-AGv"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="R1S-9g-zX7" secondAttribute="trailing" id="4qa-5q-jHc"/>
-                            <constraint firstItem="R1S-9g-zX7" firstAttribute="leading" secondItem="RS8-gT-yS6" secondAttribute="leading" id="6cy-iZ-afe"/>
-                            <constraint firstItem="R1S-9g-zX7" firstAttribute="top" secondItem="cfH-0X-fqd" secondAttribute="bottom" id="QLt-8x-qK5"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="home_off" selectedImage="home_on" id="ql3-pf-rxt"/>
                     <navigationItem key="navigationItem" title="首页" id="fMY-tK-rmm"/>
@@ -333,7 +339,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="activity_01" width="30" height="30"/>
+        <image name="activity_01" width="450" height="194"/>
         <image name="cart_off" width="30" height="30"/>
         <image name="category_off" width="30" height="30"/>
         <image name="home_off" width="30" height="30"/>
